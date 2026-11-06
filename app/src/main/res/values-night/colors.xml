@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ivi_background_primary">#161B2E</color>
+    <color name="ivi_background_secondary">#222842</color>
+    <color name="ivi_text_primary">#F4F1EA</color>
+    <color name="ivi_text_secondary">#B7BCCB</color>
+    <color name="ivi_button_filled_enabled">#9C84F0</color>
+    <color name="ivi_button_text">#11152A</color>
+    <color name="ivi_progress_track">#343B5C</color>
+    <color name="ivi_progress_fill">#F2A08F</color>
+    <color name="pleos_button_primary">#17FFFFFF</color>
+    <color name="pleos_toggle_enabled">#12FFFFFF</color>
+    <color name="pleos_toggle_selected">#3A4266</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pleos 토큰 이름을 따름(ivi_*) -->
+    <color name="ivi_background_primary">#FFF7EC</color>
+    <color name="ivi_background_secondary">#FFFFFF</color>
+    <color name="ivi_text_primary">#1F2433</color>
+    <color name="ivi_text_secondary">#5B6275</color>
+    <color name="ivi_button_filled_enabled">#7A5CE0</color>
+    <color name="ivi_button_text">#FFFFFF</color>
+    <color name="ivi_progress_track">#E6DCCB</color>
+    <color name="ivi_progress_fill">#F28C7A</color>
+    <!-- 카드 그림은 밤에도 밝은 종이색이라 글씨는 늘 어둡게 -->
+    <color name="card_text">#1F2433</color>
+    <!-- Pleos 컴포넌트 색: Primary 버튼·토글은 바탕 위 옅은 덧칠(가이드 #F3F3F3 = 흰 바탕의 검정 5%) -->
+    <color name="pleos_button_primary">#0D1F2433</color>
+    <color name="pleos_toggle_enabled">#0D1F2433</color>
+    <color name="pleos_toggle_selected">#FFFFFF</color>
+</resources>

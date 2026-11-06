@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true" />
+
+    <!-- 내비 목적지·남은 거리/시간 읽기, 즐겨찾기·최근 목적지 -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <!-- 즐겨찾기로 바로 길안내 시작(정차 중) -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <!-- 기어 P/D (GEAR_SELECTION) -->
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+    <!-- 안내 음성(Pleos TextToSpeech, 기기 안 합성) -->
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+
+    <!-- 차에 깔린 유튜브 앱(없으면 주소를 받는 다른 앱)으로 플레이리스트 열기 -->
+    <queries>
+        <package android:name="com.google.android.youtube" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.WooriEodiga">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="true"
+            android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 주행 중에도 띄울 수 있는 화면(조작은 앱에서 정차 중으로 제한) -->
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+        </activity>
+    </application>
+</manifest>
