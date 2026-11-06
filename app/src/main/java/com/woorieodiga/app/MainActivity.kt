@@ -324,7 +324,7 @@ class MainActivity : Activity() {
 
     /**
      * Pleos 타이포: Headline 60/56/48, Title 40/36/32, Body 30/28/26, Label 24/20(줄 높이도 가이드 값).
-     * 글꼴은 시스템 sans-serif 가 Pleos 에선 Asta Sans 다. 굵게는 Bold(600) — 700 은 ExtraBold 로 너무 두껍다.
+     * 글꼴은 시스템 sans-serif 가 Pleos 에선 Asta Sans 다. 굵게는 Bold(600)이다. 700 은 ExtraBold 로 너무 두껍다.
      */
     private fun text(value: String, sp: Float, bold: Boolean = false, secondary: Boolean = false) = TextView(this).apply {
         text = value

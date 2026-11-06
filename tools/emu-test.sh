@@ -10,7 +10,7 @@ ACT="$PKG/.MainActivity"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APK="${APK:-$ROOT/app/build/outputs/apk/debug/app-debug.apk}"
 
-# 창 크기 목록: "이름 가로x세로 밀도(dpi)" — 값은 짐작이니 실제 FormFactor 값으로 고칠 것
+# 창 크기 목록: "이름 가로x세로 밀도(dpi)": 값은 짐작이니 실제 FormFactor 값으로 고칠 것
 FORM_FACTORS=(
   "portrait   840x1185  160"
   "landscape  1920x720   160"
